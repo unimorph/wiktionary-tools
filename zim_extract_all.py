@@ -37,7 +37,7 @@ while OK:
 			body = data.decode('utf-8')
 
 			for language in languages:
-				if language + u'</h2>' in body \
+				if u'>' + language + u'</h2>' in body \
 				and (u'Noun</h3>' in body or u'Verb</h3>' in body or u'Adjective</h3>' in body or u'Pronoun</h3>' in body) \
 				and (u'Conjugation' in body or u'Declension' in body or u'Inflection' in body):
 					outf = codecs.open('./candidate_pages/' + language + '/candidate_' + str(count) + '.html','wb',encoding='utf-8')
