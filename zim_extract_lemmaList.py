@@ -7,7 +7,7 @@ import pickle
 import time
 import argparse
 import numpy as np
-from zimply import ZIMFile
+from zimply.zimply import ZIMFile
 
 # gather arguments
 parser = argparse.ArgumentParser(
