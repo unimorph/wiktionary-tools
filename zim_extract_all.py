@@ -4,7 +4,7 @@ import re
 import os
 import argparse
 from collections import Counter
-from zimply import ZIMFile
+from zimply.zimply import ZIMFile
 
 # gather arguments
 parser = argparse.ArgumentParser(
